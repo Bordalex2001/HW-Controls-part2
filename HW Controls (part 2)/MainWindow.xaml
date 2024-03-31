@@ -1,0 +1,48 @@
+﻿<Window x:Class="HW_Controls__part_2_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW_Controls__part_2_"
+        mc:Ignorable="d"
+        Title="Puzzle" Height="500" Width="500">
+    <Grid x:Name="puzzleGrid" AllowDrop="True" Drop="PuzzleGrid_Drop">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Row="0" Grid.Column="0" BorderBrush="DarkGray" BorderThickness="2" AllowDrop="True">
+            <Image x:Name="puzzlePiece1" MouseDown="PuzzlePiece_MouseDown"></Image>
+        </Border>
+        <Border Grid.Row="0" Grid.Column="1" BorderBrush="DarkGray" BorderThickness="2" AllowDrop="True">
+            <Image x:Name="puzzlePiece2" MouseDown="PuzzlePiece_MouseDown"></Image>
+        </Border>
+        <Border Grid.Row="0" Grid.Column="2" BorderBrush="DarkGray" BorderThickness="2">
+            <Image x:Name="puzzlePiece3" MouseDown="PuzzlePiece_MouseDown"></Image>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="0" BorderBrush="DarkGray" BorderThickness="2">
+            <Image x:Name="puzzlePiece4" MouseDown="PuzzlePiece_MouseDown"></Image>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1" BorderBrush="DarkGray" BorderThickness="2">
+            <Image x:Name="puzzlePiece5" MouseDown="PuzzlePiece_MouseDown"></Image>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="2" BorderBrush="DarkGray" BorderThickness="2">
+            <Image x:Name="puzzlePiece6" MouseDown="PuzzlePiece_MouseDown"></Image>
+        </Border>
+        <Border Grid.Row="2" Grid.Column="0" BorderBrush="DarkGray" BorderThickness="2">
+            <Image x:Name="puzzlePiece7" MouseDown="PuzzlePiece_MouseDown"></Image>
+        </Border>
+        <Border Grid.Row="2" Grid.Column="1" BorderBrush="DarkGray" BorderThickness="2">
+            <Image x:Name="puzzlePiece8" MouseDown="PuzzlePiece_MouseDown"></Image>
+        </Border>
+        <Border Grid.Row="2" Grid.Column="2" BorderBrush="DarkGray" BorderThickness="2">
+            <Image x:Name="puzzlePiece9" MouseDown="PuzzlePiece_MouseDown"></Image>
+        </Border>
+    </Grid>
+</Window>
